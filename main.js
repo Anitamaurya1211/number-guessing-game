@@ -1,5 +1,4 @@
 
-
 var msg1 = document.getElementById("message1");
 var msg2 = document.getElementById("message2");
 var msg3 = document.getElementById("message3");
@@ -9,9 +8,11 @@ var no_of_guesses = 0;
 var guessed_nums = [];
 
 function play(){
-    var user_guess = document.getElementById("guess").
-    Value;
+    console.log("playbutton");
+    var user_guess = document.getElementById("guess").value;
+    console.log(user_guess);
     if(user_guess < 1  || user_guess > 100){
+        
         alert("Please enter a number between 1 and 100.");
     }
     else{
@@ -38,9 +39,6 @@ function play(){
             document.getElementById("my_btn").disabled = true;
        }
     
-
-
-
     }
 
 }
